@@ -1,0 +1,23 @@
+
+.page {
+  display: flex;
+  height: 85vh;
+}
+.header {
+    margin: 0px;
+    background: #eee;
+    padding: 20px;
+}
+.header p{
+    margin: 0
+}
+
+.mainmenu {
+ 
+    min-width: 100px;
+}
+
+.outletContainter{
+  width: 960px;
+  margin: 0 auto;
+}

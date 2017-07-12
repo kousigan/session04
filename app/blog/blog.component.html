@@ -1,0 +1,15 @@
+<div class="blogContainer">
+<h3>Blog</h3>
+
+<section>
+<div *ngFor="let post of blogPosts ; let i = index">
+<article>
+<h4>{{post.id}} {{post.title}} </h4>
+<p>{{post.body}}</p>
+<button (click)=(gotopost(i))>read more</button>
+</article>
+
+</div>
+<hr>
+</section>
+ 

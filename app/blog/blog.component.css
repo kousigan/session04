@@ -1,0 +1,21 @@
+ .blogContainer{
+     position: relative;
+ }
+ .activePost-overlay{
+     position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #efefef;
+
+ }
+ .activePost{
+    position: absolute;
+    top: 100px;
+    width: 960px;
+    left: 0;
+    bottom: 0;
+    background: #efefef;
+
+ }
