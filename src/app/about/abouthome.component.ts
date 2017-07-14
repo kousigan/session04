@@ -1,18 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'session04-contact',
+  selector: 'ang-abouthome',
   template: `
-    <h1>Contact</h1>
+    <p>
+      abouthome Works!
+    </p>
   `,
   styles: []
 })
-export class ContactComponent implements OnInit {
+export class AbouthomeComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
-    
   }
 
 }

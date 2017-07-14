@@ -1,8 +1,37 @@
-<h1>
-  {{title}}
-  test!!
-</h1>
-<div class="right">
-<session04-home></session04-home>
+
+  <div class="header">Angular Session
+    
+    <!-- <a  class= "login" routerLink='login'> {{_login}} </a>  -->
+    <button *ngIf="logincontroll === 'login'"  class= "login" (click)='userLogin() '> Login </button> 
+    <button  *ngIf="logincontroll === 'logout'" class= "login"> Logout </button> 
+
+  </div>
+<div class="_container">
+<div class="main_container">
+
+ <router-outlet></router-outlet>
 </div>
-<session04-about></session04-about>
+<div class="menu"><ul>
+  <li (click)="shown = ''"><a routerLink="/Angular_sessions" routerLinkActive="active">home</a></li>
+  <li   (click)="shown = 'about'"><a routerLink="/about" routerLinkActive="active" >about</a>
+   <ul  *ngIf="shown === 'about'">  
+    <li><a routerLink="/about/about01" routerLinkActive="active" >about 01</a></li>
+     <li><a routerLink="/about/about02" routerLinkActive="active" >about 02</a></li>
+      
+  </ul></li>
+
+  <li (click)="shown = 'sessions'"><a routerLink="/works" routerLinkActive="active" >Sessions</a>
+  <ul *ngIf="shown === 'sessions'">  
+    <li><a routerLink="/works/session01" routerLinkActive="active" >session 01</a></li>
+     <li><a routerLink="/works/session02" routerLinkActive="active" >session 02</a></li>
+      <li><a routerLink="/works/session03" routerLinkActive="active" >session 03</a></li>
+  </ul>
+  </li>
+
+
+  <li (click)="shown = ''"><a routerLink="/contact" routerLinkActive="active" >contact</a></li>
+</ul>
+</div>
+
+
+</div>
